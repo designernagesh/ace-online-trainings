@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<title>Ace Online Trainings</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("div.content").hide();
+	//$("li h3").css('background' : '#ccc');
+	$("li h3").css('background','#CCC');
+	$("li:first-child > div.content").show();
+	$("li:first-child a > span").html("-");
+	$("li h3 > a").click(function () {
+		if ($(this).parent().next().is(':visible') == false) {
+			$("div.content").slideUp();
+			$(this).parent().next().slideDown();
+			$("a > span").html("+");
+			$(this).children("span").html("-");
+			return false;
+		}
+		else {
+			$(this).parent().next().slideUp();
+			$(this).children("span").html("+");
+			return false;
+		}
+	});
+});
+</script>
+</head>
+<body>
+<div class="wrapper">
+  <div class="content-wrapper">
+    <div class="first-row">
+      <div class="social-icons">
+        <ul class="social-top">
+          <li><a href="https://www.facebook.com/aceonlinetrainings?fref=ts" class="facebook">&nbsp;</a></li>
+          <li><a href="https://twitter.com/AOTraining" class="twitter">&nbsp;</a></li>
+          <li><a href="#" class="linkedin">&nbsp;</a></li>
+          <li><a href="#" class="googleplus">&nbsp;</a></li>
+        </ul>
+      </div>
+      <div class="phone"><span>Call Us :</span> +1 9160300254, +1 9160303170</div>
+    </div>
+    <div class="second-row">
+      <div class="navigation">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="#" class="active">Courses</a></li>
+          <li><a href="facilities.html">Facilities</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="logo"><a href="#"><img src="images/logo.jpg" alt="logo" /></a></div>
+    </div>
+    <div class="page-content">
+      <ol class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li class="active">Courses</li>
+      </ol>
+    </div>
+    <div class="page-main">
+      <h1 class="page-heading">Courses</h1>
+      <div class="accord">
+        <ul>
+          <li>
+            <h3> <a href=""><span>+</span>&nbsp;HADOOP</a></h3>
+            <div class="content">
+              <dl>
+                <dt>Understanding BigData</dt>
+                <dd>What is Big Data?</dd>
+                <dd>Big-Data characteristics</dd>
+                <dd>Common Big Data Customers</dd>
+                <dd>Limitations of existing Big Data architectures</dd>
+              </dl>
+              <dl>
+                <dt>Distributed File System</dt>
+                <dd>Advantages of DFS</dd>
+                <dd>Challenges in DFS</dd>
+              </dl>
+              <dl>
+                <dt>Hadoop Distributions</dt>
+                <dd>Hortonworks</dd>
+                <dd>Cloudera</dd>
+                <dd>Pivotal HD</dd>
+                <dd>BDPass</dd>
+              </dl>
+              <dl>
+                <dt>Introduction to Apache Hadoop</dt>
+                <dd>Flavors of Hadoop: Big-Insights, Google Query</dd>
+              </dl>
+              <dl>
+                <dt>Hadoop Eco-system components</dt>
+                <dd>MapReduce</dd>
+                <dd>HDFS</dd>
+                <dd>Apache Pig</dd>
+                <dd>Apache Hive</dd>
+                <dd>HBASE</dd>
+                <dd>Apache Oozie</dd>
+                <dd>FLUME</dd>
+                <dd>SQOOP</dd>
+                <dd>Apache Mahout</dd>
+                <dd>KIJI</dd>
+                <dd>LUCENE</dd>
+                <dd>SOLR</dd>
+                <dd>KiteSDK</dd>
+                <dd>Impala</dd>
+                <dd>Chukwa</dd>
+                <dd>Shark</dd>
+                <dd>Cascadding</dd>
+              </dl>
+              <dl>
+                <dt>Hadoop Core-Components </dt>
+                <dd>NameNode</dd>
+                <dd>JobTracker</dd>
+                <dd>TaskTracker</dd>
+                <dd>DataNode</dd>
+                <dd>SecondaryNameNode</dd>
+              </dl>
+              <dl>
+                <dt>HDFS Architecture</dt>
+              </dl>
+              <dl>
+                <dt>Map Reduce execution</dt>
+                <dd>Job Submission</dd>
+                <dd>Job Initialization</dd>
+                <dd>Task Assignments</dd>
+                <dd>Task Execution</dd>
+              </dl>
+              <dl>
+                <dt>Rack Awareness</dt>
+                <dd>Network Topology</dd>
+                <dd>Assignment of Blocks to Racks and Nodes</dd>
+                <dd>Block Reports</dd>
+                <dd>Heart Beat</dd>
+                <dd>Block Management Service</dd>
+              </dl>
+              <dl>
+                <dt>Anatomy of File Write </dt>
+              </dl>
+              <dl>
+                <dt>Anatomy of File Read</dt>
+              </dl>
+              <dl>
+                <dt>Failover fencing </dt>
+              </dl>
+              <dl>
+                <dt>Circular Memory </dt>
+              </dl>
+              <dl>
+                <dt>Speculative Execution</dt>
+              </dl>
+              <dl>
+                <dt>Understanding of cluster </dt>
+              </dl>
+              <dl>
+                <dt>Single Node cluster with Demo </dt>
+              </dl>
+              <dl>
+                <dt>Multi Node cluster with Demo </dt>
+              </dl>
+              <dl>
+                <dt>Installation of AWS Ec2 cluster with Demo </dt>
+              </dl>
+              <dl>
+                <dt>Namenode –format </dt>
+              </dl>
+              <dl>
+                <dt>Cluster Configuration </dt>
+              </dl>
+              <dl>
+                <dt>Need of *-site.xml </dt>
+              </dl>
+              <dl>
+                <dt>Add nodes dynamically to a cluster with Demo</dt>
+              </dl>
+              <dl>
+                <dt>Remove nodes dynamically to a cluster with Demo </dt>
+              </dl>
+              <dl>
+                <dt>Safe Mode </dt>
+              </dl>
+              <dl>
+                <dt>Hadoop cluster modes </dt>
+              </dl>
+              <dl>
+                <dt>Walkthrough the installation process through the cloudera manager </dt>
+              </dl>
+              <dl>
+                <dt>Example List, show sample example list for the installation </dt>
+              </dl>
+              <dl>
+                <dt>Dump the MR logs </dt>
+              </dl>
+              <dl>
+                <dt>Data loading techniques </dt>
+                <dd>Hadoop Copy commands</dd>
+                <dd>Flume</dd>
+                <dd>Sqoop</dd>
+              </dl>
+              <dl>
+                <dt>Demo for Hadoop Copy Commands </dt>
+              </dl>
+              <dl>
+                <dt>Demo for flume </dt>
+              </dl>
+              <dl>
+                <dt>Demo for Sqoop </dt>
+              </dl>
+              <dl>
+                <dt>Introduction to course Project </dt>
+              </dl>
+              <dl>
+                <dt>Map Reduce</dt>
+                <dd>Why Map Reduce?</dd>
+                <dd>Use cases where Map Reduce is used</dd>
+                <dd>Hello world program with Weather Use Case</dd>
+                <dd>Limitations of traditional way of solving word count with large dataset</dd>
+                <dd>Map Reduce way of solving the problem</dd>
+                <dd>Complete overview of MapReduce</dd>
+                <dd>Combiners, Partitions</dd>
+                <dd>Limitation of Partioner</dd>
+                <dd>Pass the values to mapper program</dd>
+                <dd>Joins</dd>
+                <dd>Custom Input Formats</dd>
+                <dd>Custom keys, Values usage of writables</dd>
+                <dd>Multi outputs</dd>
+                <dd>Counters</dd>
+                <dd>MR unit testcases</dd>
+                <dd>MR Design patterns</dd>
+                <dd>Secondary Sort</dd>
+                <dd>Distributed Cache</dd>
+                <dd>Sequential File</dd>
+              </dl>
+              <dl>
+                <dt>PIG </dt>
+                <dd>Need of Pig</dd>
+                <dd>Why Pig Created?</dd>
+                <dd>Introduction to skew Join</dd>
+                <dd>Why go for Pig when Map Reduce is there?</dd>
+                <dd>Pig use cases</dd>
+                <dd>Pig built in operators</dd>
+                <dd>Pig store schema</dd>
+                <dd>Demo using schema</dd>
+                <dd>Demo using without schema</dd>
+                <dd>Operators</dd>
+                <dd>Dump Vs Store</dd>
+                <dd>DataTypes</dd>
+                <dd>Diagnostic Operators</dd>
+                <dd>UDFs</dd>
+                <dd>Storage Handler</dd>
+              </dl>
+              <dl>
+                <dt>HIVE</dt>
+                <dd>Hive Background</dd>
+                <dd>What is Hive?</dd>
+                <dd>Pig Vs Hive</dd>
+                <dd>Where to Use Hive?</dd>
+                <dd>Hive Architecture</dd>
+                <dd>Metastore</dd>
+                <dd>Hive execution modes</dd>
+                <dd>External, Manged, Native and Non-native tables</dd>
+                <dd>Partitions</dd>
+                <dd>Buckets</dd>
+                <dd>Hive DataModel</dd>
+                <dd>Hive DataTypes</dd>
+                <dd>Queries</dd>
+                <dd>Joins</dd>
+                <dd>Multi-table Inserts</dd>
+                <dd>Multiple files, directories, table inserts</dd>
+                <dd>Load AVRO tables</dd>
+                <dd>Serde</dd>
+                <dd>JSON</dd>
+                <dd>View</dd>
+                <dd>Index</dd>
+                <dd>UDF</dd>
+                <dd>UDAF</dd>
+                <dd>UDFE</dd>
+              </dl>
+              <dl>
+                <dt>HBASE</dt>
+                <dd>Introduction to NOSQL Databases</dd>
+                <dd>NOSql Landscapes</dd>
+                <dd>Introduction to HBASE</dd>
+                <dd>HBASE vs RDBMS</dd>
+                <dd>Create Table on HBASE using HBASE shell</dd>
+                <dd>Where to use HBASE?</dd>
+                <dd>Where not to use HBASE?</dd>
+                <dd>Write Files to HBASE</dd>
+                <dd>HBASE –ROOT- Catalog table</dd>
+                <dd>Major Components of HBASE</dd>
+                <dd>Consistency</dd>
+                <dd>HBASE Architecture</dd>
+                <dd>Compaction</dd>
+                <dd>Sharding</dd>
+                <dd>Sparse Datastore</dd>
+              </dl>
+              <dl>
+                <dt>YARN</dt>
+              </dl>
+              <dl>
+                <dt>ZOOKEEPER</dt>
+              </dl>
+              <dl>
+                <dt>OOZIE</dt>
+              </dl>
+            </div>
+          </li>
+          <li>
+            <h3> <a href=""><span>+</span>&nbsp;Oracle DBA</a></h3>
+            <div class="content">
+              <dl>
+                <dd>Architecture</dd>
+                <dd>System Global Area</dd>
+                <dd>TableSpace & DataFiles</dd>
+                <dd>Patching</dd>
+                <dd>Cloning</dd>
+                <dd>Data Pumps</dd>
+                <dd>Storage & User Management</dd>
+                <dd>Backup & Recovery</dd>
+                <dd>RMAN</dd>
+              </dl>
+            </div>
+          </li>
+          <li>
+            <h3> <a href=""><span>+</span>&nbsp;Oracle Apps DBA</a></h3>
+            <div class="content">
+              <dl>
+                <dd>Overview</dd>
+                <dd>Installation and Configuration</dd>
+                <dd>Architecture</dd>
+                <dd>AD Utilities</dd>
+                <dd>OAM</dd>
+                <dd>Cloning</dd>
+              </dl>
+            </div>
+          </li>
+          <li style="list-style-type: none">
+            <h3> <a href=""><span>+</span>&nbsp;Oracle Fusion Middleware</a></h3>
+            <div class="content">
+              <dl>
+                <dt>SOA</dt>
+                <dd>Overview of SOA and SCA Concepts</dd>
+                <dd>Installation of SOA Suite</dd>
+                <dd>Designing Composite Applications with Oracle SOa Suite 11g</dd>
+                <dd>Creating a Composite Application</dd>
+                <dd>Managing and Monitoring a Composite Application</dd>
+                <dd>Creating JCA Adapter Services</dd>
+                <dd>Working with Mediator Components</dd>
+                <dd>Developing Business Rules</dd>
+                <dd>Developing a Simple BPEL Component</dd>
+                <dd>Orchestrating Services with BPEL</dd>
+                <dd>Introduction to BPEL Interaction Patterns</dd>
+                <dd>Handling Exceptions in Composite Applications</dd>
+                <dd>Human Task Creation</dd>
+                <dd>Domain Value Maps(DVM)</dd>
+                <dd>Business Activity Monitor (BAM)</dd>
+                <dd>Integrating Service with Oracle Service Bus (OSB)</dd>
+              </dl>
+              <dl>
+                <dt>OSB</dt>
+                <dd>Introduction</dd>
+                <dd>OSB Installation</dd>
+                <dd>Creating Basic OSB Project</dd>
+                <dd>Using File Transport</dd>
+                <dd>Using file Transport To Read Structured Messages</dd>
+                <dd>Managing and Monitoring a Composite Application</dd>
+                <dd>Using FTP Transport</dd>
+                <dd>Using File and JMS Transports</dd>
+                <dd>Using Email service Transport</dd>
+                <dd>Creating FTP Service Using JCA</dd>
+                <dd>Using DB Adapter Select Operation</dd>
+                <dd>Communication With Data Base And Inserting Records</dd>
+                <dd>Using JCA And File Transports</dd>
+                <dd>Conditional Branching</dd>
+                <dd>Operational Branching</dd>
+                <dd>Dynamic Routing</dd>
+                <dd>Error Handling</dd>
+              </dl>
+              <dl>
+                <dt>ADF </dt>
+                <dd>Introduction to Oracle Fusion and Oracle ADF</dd>
+                <dd>Getting Started with Jdeveloper</dd>
+                <dd>Building a Business Model with ADF Business Components</dd>
+                <dd>Querying and Persisting Data</dd>
+                <dd>Exposing Data</dd>
+                <dd>Declaratively Customizing Data Services</dd>
+                <dd>Validating User Input</dd>
+                <dd>Troubleshooting ADF BC Applications</dd>
+                <dd>Understanding UI Technologies</dd>
+                <dd>Binding UI Components to Data</dd>
+                <dd>Planning the User Interface</dd>
+                <dd>Adding Functionality to Pages</dd>
+                <dd>Implementing Navigation on Pages</dd>
+                <dd>Achieving the Required Layout</dd>
+                <dd>Ensuring Reusability</dd>
+                <dd>Passing Values Between UI Elements</dd>
+                <dd>Implementing Transactional Capabilities</dd>
+                <dd>Implementing Security in ADF Applications</dd>
+                <dd>Deploying ADF Applications</dd>
+              </dl>
+              <dl>
+                <dt>OBIEE</dt>
+                <dd>Overview</dd>
+                <dd>Installation</dd>
+                <dd>Admin Tool and RPD Modelling</dd>
+                <dd>Dashboard and Analysis</dd>
+                <dd>Architecture and Security Features</dd>
+              </dl>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <!-- Footer HTML Starts Here -->
+  <div class="footer">
+    <div class="footer-wrapper">
+      <div class="right-side"> <span class="address">Ace Online Trainings<br />
+        X Roads, A.S.Rao Nagar, <br />
+        Hyderabad - 500062</span> <span class="phone"> +1 9160300254, +1 9160303170</span> <br />
+        <span class="mail">info@aceonlinetrainings.com</span> </div>
+      <div class="left-side">
+        <p>&copy; 2014 www.aceonlinetrainings.com. All Rights Reserved.</p>
+        <a href="#">Privacy Policy</a>
+        <ul class="social-footer">
+          <li><a href="https://www.facebook.com/aceonlinetrainings?fref=ts" class="facebook">&nbsp;</a></li>
+          <li><a href="https://twitter.com/AOTraining" class="twitter">&nbsp;</a></li>
+          <li><a href="#" class="linkedin">&nbsp;</a></li>
+          <li><a href="#" class="googleplus">&nbsp;</a></li>         
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Footer HTML Ends Here -->
+</div>
+</body>
+</html>
